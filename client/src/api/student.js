@@ -7,11 +7,11 @@ export const createStudent = async(data)=>{
         }
     }
 
-    const response = await axios.post('/api/student' , data , config).catch(e=>{console.log(e)})
+    const response = await axios.post('/api/user' , data , config).catch(e=>{console.log(e)})
     return response
 }
 export const getStudents = async()=>{
     
-    const response = await axios.get('/api/student')
+    const response = await axios.get('/api/user')
     return response
 }
